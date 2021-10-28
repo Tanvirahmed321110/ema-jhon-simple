@@ -1,0 +1,18 @@
+.p p{
+    line-height: 4px;
+    letter-spacing: -1px;
+    font-weight:500;
+}
+
+.head{
+    text-align: center;
+}
+.summery{
+    z-index: 2;
+    text-align: start;
+    /* background-color: rgb(236, 221, 221); */
+    box-shadow: 2px 2px 4px 4px;
+}
+.summery:hover{
+    box-shadow: blue 3px 3px 5px 7px;
+} 

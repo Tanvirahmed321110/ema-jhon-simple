@@ -1,0 +1,38 @@
+.main{
+    margin-right: 1%;
+    display: flex;
+    padding: 10px;
+    border-bottom: 2px red solid;
+    /* box-shadow: blue 2px 5px; */
+    text-align:left;
+}
+.price{color:green}
+
+.sub{
+    padding: 1%;
+}
+
+
+.main:hover {
+    box-shadow: black 2px 2px 2px 7px;
+    background-color: brown;
+    color:white
+}
+.main:hover .price{
+    color:yellow
+}
+
+.add-btn{
+    background-color: goldenrod;
+    cursor: pointer;
+    padding: 3px 4px;
+    color: mediumblue;
+    font-size: 17px;
+    font-weight: bold;
+}
+    
+/* .main:hover button {background-color:gold;} */
+button:hover {background-color: navy;color:white;}
+
+p{font-size: 15px;
+font-weight: 400;}
