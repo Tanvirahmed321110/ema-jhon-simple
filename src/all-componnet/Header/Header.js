@@ -1,12 +1,10 @@
 import React from 'react';
 import headerLogo from '../../images/logo.png'
 import'./Header.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIdCard} from '@fortawesome/free-solid-svg-icons'
+
 
 
 const Header = (props) => {
-    const element = <FontAwesomeIcon icon={faIdCard} />
     return (
         <div className="header">
             <img src={headerLogo} alt="icon pic" title="this is icon" />
@@ -22,10 +20,6 @@ const Header = (props) => {
                  </nav>
                  </nav>
 
-                <div className="search">
-                    <input type="text" placeholder=" Search Here" />       
-                    <span> &nbsp; &nbsp; {element} 🛒<span style={{fontSize:'24px'}}>0</span> </span>  
-                </div>
         </div>
     );
 };

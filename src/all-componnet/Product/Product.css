@@ -36,3 +36,7 @@ button:hover {background-color: navy;color:white;}
 
 p{font-size: 15px;
 font-weight: 400;}
+
+
+.icon{color: navy;}
+.main:hover .icon{color: yellow;}

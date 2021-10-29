@@ -5,9 +5,9 @@ import { faStore } from '@fortawesome/free-solid-svg-icons'
 const Cart = (props) => {
     const {cart}=props
     const total=cart.reduce((pre,curr)=>pre+curr.price,0)
-    const tax=1
+    const tax=total>0?1:0
     const totalTax=(total/100)*3
-    const carry=10
+    const carry=total>0 ?10:0
     const allTotal=tax+total+totalTax+carry
 
     // total.toFixed(2)

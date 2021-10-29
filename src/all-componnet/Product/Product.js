@@ -1,7 +1,9 @@
 import React from 'react';
+import Rating from 'react-rating';
 import './Product.css'
 const Product = (props) => {
-    const {name,price,stock,img,seller}=props.allProperty
+    const {name,price,stock,img,seller,star}=props.allProperty
+    console.log(props.allProperty)
 
     return (
         <div className="main">
@@ -9,10 +11,19 @@ const Product = (props) => {
                <img src={img} alt="" />
             </div>
             <div className="sub">
-               <h3 className="name">name :-  {name.slice(0,36)}</h3>
+               <h3 className="name">name :-  {name.slice(0,100)}</h3>
                <h4 className="price">price : ${price}</h4>
                <p>by : {seller}</p>
                <p>only {stock} left in stock - order soon</p>
+               
+              <div className="icon">
+                 <Rating
+                    initialRating={star}
+                    emptySymbol="far fa-star"
+                    fullSymbol="fas fa-star"
+                    
+                 />
+              </div>
 
                <button onClick={()=> props.handeler(props.allProperty)} className="add-btn">🛒 Add To Cart</button>
             </div>
